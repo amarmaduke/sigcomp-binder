@@ -4,7 +4,6 @@ using namespace std;
 typedef unsigned long long u64
 typedef long long i64
 
-int main()
-{
+int main() {
    return 0;
 }

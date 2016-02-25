@@ -6,10 +6,64 @@
 
 \section{Formuals}
 
-Permutations, $k$ objects from a set of $n$, or $_{n}P_{k}$
+Permutations, $k$ objects from a sequence of $n$, or $_{n}P_{k}$.
 
 \begin{equation}
    _{n}P_{k} = \frac{n!}{(n - k)!} = n(n-1)(n-2)\ldots\ (n-k+1)
 \end{equation}
+
+Permutations with repetition, same as Permutation except you can choose the same object multiple times.
+
+\begin{equation}
+   _{n}P^r_{k} = k^n
+\end{equation}
+
+Combinations, $k$ objects from a set $n$ to form a new set, or $\binom{n}{k}$ (pronounced $n$ choose $k$).
+
+\begin{equation}
+   \binom{n}{k} = \frac{n!}{k!(n-k)!}
+\end{equation}
+
+Combinations with repetition, $k$ objects from a set $n$ to form a new \textit{multi}set, or $\left(\binom{n}{k}\right)$.
+
+\begin{equation}
+   \left(\binom{n}{k}\right) = \binom{n + k - 1}{k}
+\end{equation}
+
+Combination identities,
+
+\begin{gather}
+   \binom{n}{k} = \binom{n}{n - k} \\
+   \binom{n}{k} = \binom{n - 1}{k} + \binom{n - 1}{k - 1} \\
+   \binom{n}{m} \binom{m}{k} = \binom{n}{k} \binom{n - k}{m - k}
+\end{gather}
+
+Sums,
+
+\begin{gather}
+   \sum^n_{i=1} i = \frac{n(n+1)}{2} \\
+   \sum^n_{i=1} i^2 = \frac{n(n+1)(2n+1)}{6} \\
+   \sum^n_{i=1} i^3 = \frac{n^2(n+1)^2}{4} \\
+   \sum^n_{k=0} \binom{n}{k} = 2^n
+\end{gather}
+
+Logarithm identities,
+
+\begin{gather}
+   \log_b x = \frac{\log_a x}{\log_a b} \\
+   \log x^y = y \log x \\
+   \log(xy) = \log x + \log y
+\end{gather}
+
+Trigonometry identities,
+
+\begin{gather}
+   \tan x = \frac{\sin x}{\cos x} \\
+   \sin^2 x + \cos^2 x = 1 \\
+   \sin x = \cos (\frac{\pi}{2} - x) \\
+   \sin (x \pm y) = \sin x \cos y \pm \cos x \sin y \\
+   \pi = 4 \arctan(1) \\
+   e^{ix} = \cos x + i \sin x
+\end{gather}
 
 \end{document}
